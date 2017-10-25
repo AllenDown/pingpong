@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ping Pong</title>
+<style type="text/css">
+    #playground{
+        background: #000 url(image/pixel.jpg);
+        width: 400px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+    #ball{
+        background: #fbb;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 150px;
+        top: 100px;
+        border-radius: 10px;/*设置圆角矩形*/
+    }
+    .paddle{
+        background: #bbf;
+        left: 50px;
+        top:70px;
+        position:absolute;
+        width: 30px;
+        height: 70px;
+    }
+    #paddleB{
+        left:320px;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Ping Pong</h1>
+    </header>
+    <div class="score">
+        playerA:<span id="scoreA">0</span>
+        <br>
+        playerB:<span id="scoreB">0</span>
+    </div>
+    <br>
+    <div id="game">
+        <div id="playground">
+            <div id="paddleA" class="paddle"></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        Enjoy your game.
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/pingpong.js"></script>
+    
+</body>
+</html>
